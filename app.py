@@ -16,7 +16,7 @@ df['embedding'] = df['embedding'].apply(eval).apply(lambda x: np.array(x, dtype=
 # Create Flask App
 app = Flask(__name__)
 
-#Main Code
+# Main Code
 @app.route('/', methods=['GET', 'POST'])
 def index():
     if request.method == 'POST':
