@@ -13,7 +13,7 @@ ENGINE = 'text-embedding-ada-002'
 df = pd.read_csv('quote_embeds.csv')  
 df['embedding'] = df['embedding'].apply(eval).apply(lambda x: np.array(x, dtype=np.float32))
 
-#Create Flask App
+# Create Flask App
 app = Flask(__name__)
 
 #Main Code
