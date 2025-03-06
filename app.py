@@ -7,7 +7,7 @@ import numpy as np
 from openai.embeddings_utils import get_embedding, cosine_similarity
 from API_KEY import KEY
 
-#Initialize OPEN AI Tools
+# Initialize OPEN AI Tools
 openai.api_key = KEY
 ENGINE = 'text-embedding-ada-002'
 df = pd.read_csv('quote_embeds.csv')  
