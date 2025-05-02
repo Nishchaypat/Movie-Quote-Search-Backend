@@ -9,7 +9,7 @@ from API_KEY import KEY
 
 # Initialize OPEN AI Tool
 openai.api_key = KEY
-ENGINE = 'text-embedding-ada-002'
+ENGINE = 'text-embedding-ada-002' # The embedding model
 df = pd.read_csv('quote_embeds.csv')  
 df['embedding'] = df['embedding'].apply(eval).apply(lambda x: np.array(x, dtype=np.float32))
 
